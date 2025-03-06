@@ -18,10 +18,10 @@ import io.jsonwebtoken.security.Keys;
 @Component
 public class JwtTokenProvider {
 
-    @Value("${jwt.secret}")
+    @Value("c2VjcmV0S2V5MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNA")
     private String secretKey;
 
-    @Value("${jwt.expiration}")
+    @Value("86400000")
     private long jwtExpirationInMills;
 
     // Generar un token sin claims adicionales
